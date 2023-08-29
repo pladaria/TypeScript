@@ -31,15 +31,15 @@ declare function parseFloat(string: string): number;
 
 /**
  * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number).
- * @param number A numeric value.
+ * @param unknown A numeric value.
  */
-declare function isNaN(number: number): boolean;
+declare function isNaN(number: unknown): boolean;
 
 /**
  * Determines whether a supplied number is finite.
- * @param number Any numeric value.
+ * @param unknown Any numeric value.
  */
-declare function isFinite(number: number): boolean;
+declare function isFinite(number: unknown): boolean;
 
 /**
  * Gets the unencoded version of an encoded Uniform Resource Identifier (URI).

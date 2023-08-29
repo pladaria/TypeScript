@@ -202,29 +202,29 @@ interface NumberConstructor {
      * Returns true if passed value is finite.
      * Unlike the global isFinite, Number.isFinite doesn't forcibly convert the parameter to a
      * number. Only finite values of the type number, result in true.
-     * @param number A numeric value.
+     * @param unknown A numeric value.
      */
-    isFinite(number: unknown): boolean;
+    isFinite(number: unknown): number is number;
 
     /**
      * Returns true if the value passed is an integer, false otherwise.
-     * @param number A numeric value.
+     * @param unknown A numeric value.
      */
-    isInteger(number: unknown): boolean;
+    isInteger(number: unknown): number is number;
 
     /**
      * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a
      * number). Unlike the global isNaN(), Number.isNaN() doesn't forcefully convert the parameter
      * to a number. Only values of the type number, that are also NaN, result in true.
-     * @param number A numeric value.
+     * @param unknown A numeric value.
      */
-    isNaN(number: unknown): boolean;
+    isNaN(number: unknown): number is number;
 
     /**
      * Returns true if the value passed is a safe integer.
-     * @param number A numeric value.
+     * @param unknown A numeric value.
      */
-    isSafeInteger(number: unknown): boolean;
+    isSafeInteger(number: unknown): number is number;
 
     /**
      * The value of the largest integer n such that n and n + 1 are both exactly representable as
